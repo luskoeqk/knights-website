@@ -1,42 +1,110 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Righteous&amp;display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  color: #fff;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #202020;
+  font-weight: 400;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  @media (max-width: 1199px) {
+    font-size: 14px;
   }
 }
 
-.card {
-  padding: 2em;
+html {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+ol,
+ul {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: .25s ease-in;
+}
+
+a:hover {
+  color: #fcbd56;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 46px;
+
+  @media (max-width: 1199px) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
 }

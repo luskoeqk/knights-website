@@ -3,12 +3,18 @@ import '@/styles/App.scss'
 
 // router
 import { Routes, Route } from "react-router-dom";
-import Home from './pages/Home';
-import Activities from './pages/Activities';
-import Coaches from './pages/Coaches';
-import Contacts from './pages/Contacts';
-import History from './pages/History';
-import Practices from './pages/Practices';
+
+// pages
+import Home from '@/pages/Home';
+import Activities from '@/pages/Activities';
+import Coaches from '@/pages/Coaches';
+import Contacts from '@/pages/Contacts';
+import History from '@/pages/History';
+import Practices from '@/pages/Practices';
+
+// components
+import { Footer } from '@/components/LayoutComponents/Footer';
+import { Header } from '@/components/LayoutComponents/Header';
 
 
 function App() {
@@ -16,7 +22,7 @@ function App() {
     return (
         <div className="App">
 
-            {/* header */}
+            <Header />
 
             <Routes>
                 <Route index element={<Home />} />
@@ -27,7 +33,7 @@ function App() {
                 <Route path='practices' element={<Practices />} />
             </Routes>
 
-            {/* footer */}
+            {/* <Footer /> */}
 
         </div>
     )
