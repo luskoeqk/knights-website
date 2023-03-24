@@ -4,59 +4,51 @@ header {
     width: 100%;
     z-index: 5;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
     .top-panel {
-        padding: 5px 0;
+
+        width: 100%;
 
         .container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
             padding-right: 15px;
             padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
+            margin: auto;
 
-            .header-left {
-                width: calc(50% - 15px);
-            }
 
-            .header-left {
+            .header-cont {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px solid #474747;
+                width: 100%;
+                padding: 10px;
 
-                .header-cont {
+                li {
                     display: flex;
                     align-items: center;
+                    margin-right: 47px;
+                    font-size: 12px;
+                    font-family: "Righteous", sans-serif;
 
-                    li {
-                        display: flex;
-                        align-items: center;
-                        margin-right: 47px;
-                        font-size: 12px;
-                        font-family: "Righteous", sans-serif;
-
-                        i {
-                            margin-right: 15px;
-                            font-size: 14px;
-                            color: #fcbd56;
-                        }
+                    i {
+                        margin-right: 15px;
+                        font-size: 14px;
+                        color: #fcbd56;
                     }
+                }
 
-                    li:last-child {
-                        margin-right: 0;
-                    }
+                li:last-child {
+                    margin-right: 0;
                 }
             }
         }
-    }
-
-    .nav-list>li {
-        border: none;
-    }
-
-    .nav-list>li>a {
-        font-size: 14px;
-        line-height: 30px;
-        padding: 0 15px;
     }
 
     .nav-list {
@@ -86,4 +78,34 @@ header {
         color: #fcbd56;
     }
 
+    .header-menu {
+
+        .container {
+
+            .header-logo {
+                margin-top: 2px;
+                padding: 20px 0 19px;
+                text-align: center;
+            }
+
+            .nav-menu {
+                overflow: hidden;
+
+                .nav-list {
+                    display: flex;
+                    flex-direction: row;
+
+                    li {
+                        margin-bottom: 5px;
+                        font-size: small;
+
+                        a {
+                            padding: 0 15px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
